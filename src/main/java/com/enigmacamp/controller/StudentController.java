@@ -40,7 +40,7 @@ public class StudentController {
 		studentService.editStudent(id, student);
 	}
 
-	@PostMapping("/removeStudent/{id}")
+	@DeleteMapping("/removeStudent/{id}")
 	public void removeStudent(@PathVariable("id") int id) {
 		studentService.removeStudent(id);
 	}

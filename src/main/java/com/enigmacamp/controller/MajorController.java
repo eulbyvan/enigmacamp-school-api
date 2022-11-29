@@ -39,7 +39,7 @@ public class MajorController {
 //		majorService.editMajor(id, major);
 //	}
 //
-//	@PostMapping("/{id}")
+//	@DeleteMapping("/removeMajor/{id}")
 //	public void removeMajor(@PathVariable("id") int id) {
 //		majorService.removeMajor(id);
 //	}
