@@ -15,7 +15,7 @@ import java.util.Optional;
  */
 
 @RestController
-@RequestMapping("/students")
+@RequestMapping(value = "/students")
 public class StudentController {
 	@Autowired
 	IStudentService studentService;
@@ -40,7 +40,7 @@ public class StudentController {
 		studentService.editStudent(id, student);
 	}
 
-	@PostMapping("/{id}")
+	@PostMapping("/removeStudent/{id}")
 	public void removeStudent(@PathVariable("id") int id) {
 		studentService.removeStudent(id);
 	}
