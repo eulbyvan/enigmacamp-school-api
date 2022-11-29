@@ -34,7 +34,7 @@ public class MajorController {
 		return majorService.addMajor(major);
 	}
 
-//	@PostMapping("/{id}")
+//	@PutMapping("/{id}")
 //	public void editMajor(@PathVariable int id, @RequestBody Major major) {
 //		majorService.editMajor(id, major);
 //	}
